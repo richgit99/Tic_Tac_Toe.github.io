@@ -1,0 +1,314 @@
+body{
+    margin: 0 ;
+    padding: 0;
+   background:linear-gradient(red,yellow,green,blue);
+/* background-repeat: repeat-y; */
+}
+
+
+/* .container_of_whole_playground #b1_div , #b2_div , #b3_div{
+    font-size: large;
+} */
+
+#x:hover{
+    background-color: yellow;
+}
+
+#o:hover{
+    background-color: orchid;
+}
+
+
+
+header {
+    margin: 0;
+    width: 100%;
+    background-color: rgb(166, 123, 207);
+    border: 2px solid rgb(166, 123, 207);
+    padding: 0.39em;
+
+}
+
+
+header :is(h1,h4) {
+    width: 100%;
+    text-align: center;
+    
+}
+
+header li{
+    list-style-type: none;
+    font-size: xx-large;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    width: 100%;
+}
+
+.container_of_whole_playground{
+
+border: 5px solid black;
+/* width: 40%; */
+width: fit-content;
+margin: 0 auto;
+
+
+}
+
+.container_of_whole_playground .first_three_rows , .second_three_rows , .third_three_rows{
+
+border: 1px solid green;
+display: flex;
+justify-content: center;
+width: 100%;
+overflow: hidden;
+
+
+
+justify-content: space-evenly;
+
+
+
+}
+
+.container_of_whole_playground div{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    justify-content:center;
+    justify-items:center;
+    min-height: 2.5em;
+
+}
+
+
+.container_of_whole_playground button{
+    padding: 2.5em;
+    font-size: larger;
+    font-weight: bolder;
+    border: none;
+   min-height: max-content;
+   /* background-color: red; */
+}
+
+
+
+
+footer {
+    padding: 0.8em 2em 0.5em 0.5;
+    width: 100%;
+    margin: 0 auto;
+    border: 4px solid rgb(166,123,207);
+    background-color:rgb(166, 123, 207);
+ 
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    flex-wrap: nowrap;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    flex-wrap: nowrap;
+    
+}
+
+
+footer li{
+
+    list-style-type:none;
+    font-size: medium;
+    font-weight: bold;
+    width: 100%;
+    padding: 1em 0.5em;
+    text-align: center;
+
+
+}
+
+footer a{
+    text-decoration:none ;
+    color: darkmagenta;
+    font-size: larger;
+
+}
+
+/* @media (min-width: 10px) and (max-width:299px){
+
+.container_of_whole_playground {
+    width: 70%;
+    border: 2px solid yellow;
+}
+
+
+
+}
+ */
+
+
+
+
+
+@media (min-width:100px) and (max-width:900px){
+
+    #turn_id{
+        width: 65%;
+
+    }
+
+header li{
+    text-align: center;
+}
+
+    header #li{
+        width: 85%;
+        
+    }
+
+
+    #result{
+        width: 85%;
+        background-color: aqua;
+        border: 2px solid chartreuse;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 9px;
+    }
+ 
+
+    .container_of_whole_playground button{
+        padding: 2.5em;
+        font-size: larger;
+        font-weight: bolder;
+        border: none;
+    }
+
+ .container_of_whole_playground {
+    width: 65%;
+    background-color: rgba(238, 245, 242, 0.884);
+ }
+
+.container_of_whole_playground div div{
+    padding-bottom:  1em;
+}
+
+
+
+
+
+
+    footer {
+        padding: 2em 0.1em;
+        width: 100%;
+        margin: 0 auto;
+        
+        background-color:rgb(166, 123, 207);
+    
+        border: 2px solid rgb(166,123,207);
+    }
+    
+    footer ul{
+        display: flex;
+        justify-content: space-around;
+        
+        width: 95%;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+        flex-wrap: wrap;
+        
+    }
+    
+    
+    footer li{
+    
+        list-style-type:none;
+        font-size: medium;
+        font-weight: bold;
+        width: 100%;
+        padding: 1em 0.5em;
+        text-align: center;
+    
+    
+    }
+    
+    footer a{
+        text-decoration:none ;
+        color: darkmagenta;
+        font-size: larger;
+    
+    }
+
+}
+
+#start_button:hover{
+
+background-color:lightsalmon;
+border: 2px solid chartreuse;
+
+
+
+}
+
+#start_button{
+    border: none;
+    padding: 0.5em 0.5em;
+    font-weight: bold;
+    margin: 0 auto;
+    width: 50%;
+ font-size: large;
+}
+
+footer a:hover{
+
+    color: cyan;
+}
+
+@media (min-width:900px) and (max-width:1600px){
+
+    .container_of_whole_playground {
+        width: 35%;
+        background-color: rgba(238, 245, 242, 0.884);
+     }
+
+#turn_id{
+    width: 40%;
+}
+
+     #result{
+        width: 40%;
+        background-color: aqua;
+        border: 2px solid chartreuse;
+        text-align: center;
+        margin: 0 auto;
+        border-radius: 9px;
+    }
+
+    .container_of_whole_playground button{
+        padding: 2.5em;
+        font-size: larger;
+        font-weight: bolder;
+        border: none;
+    }
+
+    .container_of_whole_playground div div{
+        padding-bottom:  1em;
+    }
+
+    #start_button{
+        border: 0.9px solid black;
+        padding: 0.5em 0.5em;
+        font-weight: bold;
+        margin-left: 40%;
+        width: 25%;
+     font-size: large;
+    }
+
+}
+
+
