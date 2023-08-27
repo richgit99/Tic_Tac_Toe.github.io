@@ -1,314 +1,85 @@
-body{
-    margin: 0 ;
-    padding: 0;
-   background:linear-gradient(red,yellow,green,blue);
-/* background-repeat: repeat-y; */
+* {
+    box-sizing: border-box;
 }
 
-
-/* .container_of_whole_playground #b1_div , #b2_div , #b3_div{
-    font-size: large;
-} */
-
-#x:hover{
-    background-color: yellow;
-}
-
-#o:hover{
-    background-color: orchid;
-}
-
-
-
-header {
+body {
     margin: 0;
-    width: 100%;
-    background-color: rgb(166, 123, 207);
-    border: 2px solid rgb(166, 123, 207);
-    padding: 0.39em;
-
+    background-color: rgb(255, 219, 170);
 }
 
-
-header :is(h1,h4) {
-    width: 100%;
+h1 {
     text-align: center;
-    
+    color: purple;
+    text-shadow: 1px 1px 2px purple;
+    padding: 0 1em;
 }
 
-header li{
-    list-style-type: none;
-    font-size: xx-large;
-    text-align: center;
-    padding-top: 1em;
-    padding-bottom: 0.5em;
-    width: 100%;
-}
-
-.container_of_whole_playground{
-
-border: 5px solid black;
-/* width: 40%; */
-width: fit-content;
-margin: 0 auto;
-
-
-}
-
-.container_of_whole_playground .first_three_rows , .second_three_rows , .third_three_rows{
-
-border: 1px solid green;
-display: flex;
-justify-content: center;
-width: 100%;
-overflow: hidden;
-
-
-
-justify-content: space-evenly;
-
-
-
-}
-
-.container_of_whole_playground div{
-    border: 1px solid black;
-    text-align: center;
-    width: 100%;
-    justify-content:center;
-    justify-items:center;
-    min-height: 2.5em;
-
-}
-
-
-.container_of_whole_playground button{
-    padding: 2.5em;
-    font-size: larger;
-    font-weight: bolder;
-    border: none;
-   min-height: max-content;
-   /* background-color: red; */
-}
-
-
-
-
-footer {
-    padding: 0.8em 2em 0.5em 0.5;
-    width: 100%;
-    margin: 0 auto;
-    border: 4px solid rgb(166,123,207);
-    background-color:rgb(166, 123, 207);
- 
-}
-
-footer ul{
-    display: flex;
-    justify-content: space-around;
+.container {
     width: 95%;
-    flex-wrap: nowrap;
+    max-width: 600px;
+    border: 2px solid black;
     margin: 0 auto;
-    text-align: center;
-    padding-left: 1em;
-    padding-right: 1em;
-    flex-wrap: nowrap;
-    
+    margin-top: 3em;
 }
 
-
-footer li{
-
-    list-style-type:none;
-    font-size: medium;
-    font-weight: bold;
+.container>div {
     width: 100%;
-    padding: 1em 0.5em;
-    text-align: center;
-
-
+    border: 1px solid rgb(88, 86, 86);
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 0;
 }
 
-footer a{
-    text-decoration:none ;
-    color: darkmagenta;
+.container>div>button {
+    flex-grow: 1;
+    flex-basis: 80px;
+    min-height: 50px;
+    aspect-ratio: 1/1;
+    max-height: 120px;
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.start_and_restart_button {
+    width: fit-content;
     font-size: larger;
-
-}
-
-/* @media (min-width: 10px) and (max-width:299px){
-
-.container_of_whole_playground {
-    width: 70%;
-    border: 2px solid yellow;
-}
-
-
-
-}
- */
-
-
-
-
-
-@media (min-width:100px) and (max-width:900px){
-
-    #turn_id{
-        width: 65%;
-
-    }
-
-header li{
-    text-align: center;
-}
-
-    header #li{
-        width: 85%;
-        
-    }
-
-
-    #result{
-        width: 85%;
-        background-color: aqua;
-        border: 2px solid chartreuse;
-        text-align: center;
-        margin: 0 auto;
-        border-radius: 9px;
-    }
- 
-
-    .container_of_whole_playground button{
-        padding: 2.5em;
-        font-size: larger;
-        font-weight: bolder;
-        border: none;
-    }
-
- .container_of_whole_playground {
-    width: 65%;
-    background-color: rgba(238, 245, 242, 0.884);
- }
-
-.container_of_whole_playground div div{
-    padding-bottom:  1em;
-}
-
-
-
-
-
-
-    footer {
-        padding: 2em 0.1em;
-        width: 100%;
-        margin: 0 auto;
-        
-        background-color:rgb(166, 123, 207);
-    
-        border: 2px solid rgb(166,123,207);
-    }
-    
-    footer ul{
-        display: flex;
-        justify-content: space-around;
-        
-        width: 95%;
-        flex-wrap: nowrap;
-        margin: 0 auto;
-        text-align: center;
-        padding-left: 1em;
-        padding-right: 1em;
-        flex-wrap: wrap;
-        
-    }
-    
-    
-    footer li{
-    
-        list-style-type:none;
-        font-size: medium;
-        font-weight: bold;
-        width: 100%;
-        padding: 1em 0.5em;
-        text-align: center;
-    
-    
-    }
-    
-    footer a{
-        text-decoration:none ;
-        color: darkmagenta;
-        font-size: larger;
-    
-    }
-
-}
-
-#start_button:hover{
-
-background-color:lightsalmon;
-border: 2px solid chartreuse;
-
-
-
-}
-
-#start_button{
-    border: none;
-    padding: 0.5em 0.5em;
-    font-weight: bold;
+    padding: 0.6em 1.5em;
+    border-radius: 5px;
+    display: block;
     margin: 0 auto;
-    width: 50%;
- font-size: large;
+    margin-top: 1.5em;
+    background-color: rgb(237, 197, 197);
+    font-weight: bold;
+    box-shadow: 2px 2px 6px black;
 }
 
-footer a:hover{
-
-    color: cyan;
+#restart_button {
+    display: none;
+    background-color: lightgreen;
 }
 
-@media (min-width:900px) and (max-width:1600px){
-
-    .container_of_whole_playground {
-        width: 35%;
-        background-color: rgba(238, 245, 242, 0.884);
-     }
-
-#turn_id{
-    width: 40%;
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    animation: change_color 3s infinite;
 }
 
-     #result{
-        width: 40%;
-        background-color: aqua;
-        border: 2px solid chartreuse;
-        text-align: center;
-        margin: 0 auto;
-        border-radius: 9px;
+@keyframes change_color {
+
+    10% {
+        color: darkblue;
     }
 
-    .container_of_whole_playground button{
-        padding: 2.5em;
-        font-size: larger;
-        font-weight: bolder;
-        border: none;
+    40% {
+        color: darkmagenta;
     }
 
-    .container_of_whole_playground div div{
-        padding-bottom:  1em;
+    60% {
+        color: darkgreen;
     }
 
-    #start_button{
-        border: 0.9px solid black;
-        padding: 0.5em 0.5em;
-        font-weight: bold;
-        margin-left: 40%;
-        width: 25%;
-     font-size: large;
+    80% {
+        color: darkslategrey;
     }
 
 }
-
-
