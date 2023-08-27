@@ -5,124 +5,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tic Tac Toe</title>
+    <title>Document</title>
     <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
-
 </head>
 
 <body>
 
-    <header>
 
-        <h1>Welcome to RMS Creations</h1>
+    <h1>Tic Tac Toe <br><span style="word-spacing: 0.2em;font-size: 1.3rem;color: rgb(55, 84, 75);">
+         Human Vs Human : Both the 
+    players must be present at the device</span></h1>
 
-        <h4>Online Tic Tac Toe Multiplayer Game</h4>
-
-    </header>
+    
+    <div class="container">
+        <div class="each_row"><button id="r11" class="xo_button"></button><button id="r12"
+                class="xo_button"></button><button id="r13" class="xo_button"></button></div>
+        <div class="each_row"><button id="r21" class="xo_button"></button><button id="r22"
+                class="xo_button"></button><button id="r23" class="xo_button"></button></div>
+        <div class="each_row"><button id="r31" class="xo_button"></button><button id="r32"
+                class="xo_button"></button><button id="r33" class="xo_button"></button></div>
+    </div>
 
     <br>
 
-    <div style="padding:0.5em ;">
-        <h1 style="text-align:center;background-color: rgb(191, 235, 122);
-        padding: 0.5em 1px;border: 2px solid black; width: 67%;margin: 0 auto;border: none;border-radius: 20px;
-        max-width: 430px;">Human &nbsp; Vs &nbsp; Human
-        </h1>
-    </div>
-
-    <br><br><br><br>
-
-    <div class="container_of_whole_playground">
-
-        <div class="first_three_rows" id="first_row_div">
-
-            <!-- <div><h2 id="12">1</h2></div> -->
-            <div id="b1_div" style="width:33% ;min-width: 70px;padding: 0;"><button style="height: 100%;"
-                    id="b1"></button></div>
-            <div id="b2_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b2"></button></div>
-            <div id="b3_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width:100%;height: 100%;"
-                    id="b3"></button></div>
-
-        </div>
-
-
-        <div class="second_three_rows" id="second _row_div">
-
-            <div id="b4_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b4"></button></div>
-            <div id="b5_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b5"></button></div>
-            <div id="b6_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b6"></button></div>
-
-
-        </div>
-
-
-        <div class="third_three_rows" id="third_row_div">
-
-            <div id="b7_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b7"></button></div>
-            <div id="b8_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b8"></button></div>
-            <div id="b9_div" style="width: 33%;min-width: 70px;padding: 0;"><button style="max-width: 100%;height: 100%;"
-                    id="b9"></button></div>
-
-        </div>
-
-    </div>
+    <h2 id="result_of_game"></h2>
+    <button class="start_and_restart_button" id="start_button">Start Game</button>
+    <button class='start_and_restart_button' id="restart_button">Restart Game</button>
     <br><br>
- 
-    <div style="display: flex; flex-direction: row;width: 99%;justify-content: space-evenly;background-color: none;">
-
-        <button id="x" style="width: 20% ;font-size: large;font-weight: bold;
-        padding: 0.5em;border: 2px solid black;border-radius: 10px;">Player X</button> <br>
-
-
-        <button id="o" style="width: 20% ;font-size: large;font-weight: bold;
-        padding: 0.5em;border: 2px solid black;border-radius: 10px;"> Player O</button>
-    </div>
-
-
-    <br>
-    <div style="display:flex ;text-align: center;justify-content: center;justify-items: center;width: 99%;">
-        <button id="start_button" style="text-align: center;
-    border: 2px solid black;border-radius: 20px;">Start Game</button>
-    </div>
-
-    <br><br>
-
-    <div style="margin: 0 auto; text-align: center;width: 99%;">
-        <h1 id="turn_id" style="margin:0 auto ;"> </h1>
-    </div>
-
-    <br><br>
-
-    <div>
-        <h1 id="result">Result of the Game: </h1>
-    </div>
-    <br>
-    <footer>
-
-        <ul>
-
-            <li><a href="#">News</a></li>
-            <li><a href="#">Security</a></li>
-            <li><a href="">Cookies</a></li>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Twitter</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Tinder</a></li>
-            <li><a href="">Privacy policy</a></li>
-
-        </ul>
-
-    </footer>
-
-    <!-- <script src="Tic_Tac_Toe.js"></script> -->
     <script src="index.js"></script>
 </body>
 
 </html>
-
