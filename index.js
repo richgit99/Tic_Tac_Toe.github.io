@@ -50,10 +50,12 @@ start_button.onclick = function () {
 
             if (counter % 2 == 0) {
                 element.innerText = 'X';
+                element.style.color = 'red';
 
             }
             else if (counter % 2 != 0) {
                 element.innerText = 'O';
+                element.style.color = 'blue';
             }
 
 
@@ -68,7 +70,12 @@ start_button.onclick = function () {
             ) {
                 // alert('X won');
                 xWon = true;
-
+                confetti();
+                confetti();
+                confetti();
+                confetti();
+                confetti();
+                confetti();
                 result_of_game.innerText = "Player X won";
 
                 for (let i = 0; i < buttons.length; i++) {
@@ -89,9 +96,10 @@ start_button.onclick = function () {
             ) {
                 // alert('O won');
                 yWon = true;
-
                 result_of_game.innerText = "Player O won";
-
+                confetti();
+                confetti();
+                confetti();
 
                 for (let i = 0; i < buttons.length; i++) {
                     buttons[i].disabled = true;
@@ -101,7 +109,7 @@ start_button.onclick = function () {
         }
     });
 
-    restart_button.onclick = function(){
+    restart_button.onclick = function () {
         window.location.reload();
     }
 
