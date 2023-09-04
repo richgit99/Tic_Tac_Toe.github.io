@@ -3,6 +3,14 @@ const buttons = document.getElementsByClassName('xo_button');
 const start_button = document.getElementById("start_button");
 const restart_button = document.getElementById("restart_button");
 
+
+const row1_line = document.getElementById("row1_line");
+const row2_line = document.getElementById("row2_line");
+const row3_line = document.getElementById("row3_line");
+const col1_line = document.getElementById("col1_line");
+const col2_line = document.getElementById("col2_line");
+const col3_line = document.getElementById("col3_line");
+
 let counter = 1;
 let draw_counter = 0;
 
@@ -22,6 +30,52 @@ var xWon = false;
 var yWon = false;
 
 start_button.onclick = function () {
+
+    function line_putter() {
+
+        if ((r11.innerText == 'X' && r12.innerText == 'X' && r13.innerText == 'X') ||
+            (r11.innerText == 'O' && r12.innerText == 'O' && r13.innerText == 'O')) {
+
+            row1_line.style.display = 'block';
+        }
+
+        else if ((r21.innerText == 'X' && r22.innerText == 'X' && r23.innerText == 'X') ||
+            (r21.innerText == 'O' && r22.innerText == 'O' && r23.innerText == 'O')) {
+
+            row2_line.style.display = 'block';
+        }
+
+        else if ((r21.innerText == 'X' && r22.innerText == 'X' && r23.innerText == 'X') ||
+            (r21.innerText == 'O' && r22.innerText == 'O' && r23.innerText == 'O')) {
+
+            row2_line.style.display = 'block';
+        }
+
+        else if ((r31.innerText == 'X' && r32.innerText == 'X' && r33.innerText == 'X') ||
+            (r31.innerText == 'O' && r32.innerText == 'O' && r33.innerText == 'O')) {
+
+            row3_line.style.display = 'block';
+        }
+
+        else if ((r11.innerText == 'X' && r21.innerText == 'X' && r31.innerText == 'X') ||
+            (r11.innerText == 'O' && r21.innerText == 'O' && r31.innerText == 'O')) {
+
+            col1_line.style.display = 'block';
+        }
+
+
+        else if ((r12.innerText == 'X' && r22.innerText == 'X' && r32.innerText == 'X') ||
+            (r12.innerText == 'O' && r22.innerText == 'O' && r32.innerText == 'O')) {
+
+            col2_line.style.display = 'block';
+        }
+
+        else if ((r13.innerText == 'X' && r23.innerText == 'X' && r33.innerText == 'X') ||
+            (r13.innerText == 'O' && r23.innerText == 'O' && r33.innerText == 'O')) {
+
+            col3_line.style.display = 'block';
+        }
+    }
 
 
     setTimeout(() => {
@@ -76,6 +130,9 @@ start_button.onclick = function () {
                 confetti();
                 confetti();
                 confetti();
+
+                line_putter();
+
                 result_of_game.innerText = "Player X won";
 
                 for (let i = 0; i < buttons.length; i++) {
@@ -94,6 +151,8 @@ start_button.onclick = function () {
                 (r13.innerText == "O" && r23.innerText == "O" && r33.innerText == "O") ||
                 (r12.innerText == "O" && r22.innerText == "O" && r32.innerText == "O")
             ) {
+
+                line_putter();
                 // alert('O won');
                 yWon = true;
                 result_of_game.innerText = "Player O won";
@@ -108,6 +167,8 @@ start_button.onclick = function () {
             }
         }
     });
+
+
 
     restart_button.onclick = function () {
         window.location.reload();
