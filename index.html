@@ -13,13 +13,19 @@
 
 <body>
 
-
     <h1>Tic Tac Toe <br><span style="word-spacing: 0.2em;font-size: 1.3rem;color: rgb(55, 84, 75);">
-         Human Vs Human : Both the 
-    players must be present at the device</span></h1>
+            Human Vs Human : Both the
+            players must be present at the device</span></h1>
 
-    
-    <div class="container">
+
+    <div class="container" style="position: relative;">
+        <hr style="top: 13%;" id="row1_line">
+        <hr style="top: 45%;" id="row2_line">
+        <hr style="top: 78%;" id="row3_line">
+        <hr style="left: 15%;" id="col1_line">
+        <hr style="left: 47%;" id="col2_line">
+        <hr style="left: 80%;" id="col3_line">
+
         <div class="each_row"><button id="r11" class="xo_button"></button><button id="r12"
                 class="xo_button"></button><button id="r13" class="xo_button"></button></div>
         <div class="each_row"><button id="r21" class="xo_button"></button><button id="r22"
